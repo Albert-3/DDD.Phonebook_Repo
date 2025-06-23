@@ -1,4 +1,4 @@
-﻿namespace Phonebook.Infrastructure.DTOs
+﻿namespace Phonebook.Api.DTOs
 {
     public class UpdateDTO
     {

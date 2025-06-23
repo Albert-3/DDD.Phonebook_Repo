@@ -7,7 +7,7 @@ using Phonebook.Infrastructure.Data;
 
 #nullable disable
 
-namespace Phonebook.Api.Migrations
+namespace Phonebook.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot

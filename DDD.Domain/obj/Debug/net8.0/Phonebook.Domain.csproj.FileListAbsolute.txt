@@ -9,3 +9,15 @@ C:\Users\Albert\source\repos\DDD\DDD.Domain\obj\Debug\net8.0\Phonebook.Domain.dl
 C:\Users\Albert\source\repos\DDD\DDD.Domain\obj\Debug\net8.0\refint\Phonebook.Domain.dll
 C:\Users\Albert\source\repos\DDD\DDD.Domain\obj\Debug\net8.0\Phonebook.Domain.pdb
 C:\Users\Albert\source\repos\DDD\DDD.Domain\obj\Debug\net8.0\ref\Phonebook.Domain.dll
+D:\FOlder\DDD.Phonebook_Repo\DDD.Domain\bin\Debug\net8.0\Phonebook.Domain.deps.json
+D:\FOlder\DDD.Phonebook_Repo\DDD.Domain\bin\Debug\net8.0\Phonebook.Domain.dll
+D:\FOlder\DDD.Phonebook_Repo\DDD.Domain\bin\Debug\net8.0\Phonebook.Domain.pdb
+D:\FOlder\DDD.Phonebook_Repo\DDD.Domain\obj\Debug\net8.0\Phonebook.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\FOlder\DDD.Phonebook_Repo\DDD.Domain\obj\Debug\net8.0\Phonebook.Domain.AssemblyInfoInputs.cache
+D:\FOlder\DDD.Phonebook_Repo\DDD.Domain\obj\Debug\net8.0\Phonebook.Domain.AssemblyInfo.cs
+D:\FOlder\DDD.Phonebook_Repo\DDD.Domain\obj\Debug\net8.0\Phonebook.Domain.csproj.CoreCompileInputs.cache
+D:\FOlder\DDD.Phonebook_Repo\DDD.Domain\obj\Debug\net8.0\Phonebook.Domain.sourcelink.json
+D:\FOlder\DDD.Phonebook_Repo\DDD.Domain\obj\Debug\net8.0\Phonebook.Domain.dll
+D:\FOlder\DDD.Phonebook_Repo\DDD.Domain\obj\Debug\net8.0\refint\Phonebook.Domain.dll
+D:\FOlder\DDD.Phonebook_Repo\DDD.Domain\obj\Debug\net8.0\Phonebook.Domain.pdb
+D:\FOlder\DDD.Phonebook_Repo\DDD.Domain\obj\Debug\net8.0\ref\Phonebook.Domain.dll

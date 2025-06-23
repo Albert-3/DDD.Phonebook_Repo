@@ -1,17 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Phonebook.Application.Service;
-using Phonebook.Infrastructure.DTOs;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using Phonebook.Api.DTOs;
+using Phonebook.Api.Service.Abs;
 
 namespace Phonebook.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ContactController : ControllerBase  
+    public class ContactController : ControllerBase
     {
-        private readonly PhonebookService _phonebookService;
-        public ContactController(PhonebookService service)
+        private readonly IPhoneBookService _phonebookService;
+        public ContactController(IPhoneBookService service)
         {
             _phonebookService = service;
         }
@@ -19,34 +17,27 @@ namespace Phonebook.Api.Controllers
         [HttpPost("Create")]
         public async Task<IActionResult> Create([FromBody] CreateDTO createDTO)
         {
-            await _phonebookService.Create(createDTO);
-            return Ok(); 
+            await _phonebookService.Createasync(createDTO);
+            return Ok();
         }
 
         [HttpGet("GetAll")]
-        public async Task<List<GetAllDto>> GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            var dataAll = await _phonebookService.GetAll();
+            var dataAll = await _phonebookService.GetAllAsync();
 
-            var result = new List<GetAllDto>();
-            foreach (var item in dataAll)
-            {
-                result.Add(new GetAllDto
-                {
-                    Id = item.Id,
-                    PhoneNumber = item.PhoneNumber,
-                });
-            }
+            if (dataAll.Count == 0)
+                return NoContent();
 
-            return result;
+            return Ok(dataAll);
         }
 
         [HttpGet("GetById/{id}")]
         public async Task<ActionResult<GetByIdDto>> GetById([FromRoute] int id)
         {
-            var data = await _phonebookService.GetById(id);
+            var data = await _phonebookService.GetByIdAsync(id);
             if (data == null)
-                return NotFound();
+                return BadRequest("Phonebook not found");
 
             return Ok(new GetByIdDto
             {
@@ -57,7 +48,7 @@ namespace Phonebook.Api.Controllers
         [HttpDelete("Delete/{id}")]
         public async Task<IActionResult> Delete([FromRoute] int id)
         {
-            var result = await _phonebookService.Delete(id);
+            var result = await _phonebookService.DeleteAsync(id);
             if (!result)
                 return NotFound();
             return Ok();

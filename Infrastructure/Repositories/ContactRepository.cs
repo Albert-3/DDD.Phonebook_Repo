@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Phonebook.Domain.Entities;
+using Phonebook.Domain.Interfaces;
 using Phonebook.Infrastructure.Data;
-using Phonebook.Infrastructure.Interfaces;
 
 namespace Phonebook.Infrastructure.Repositories
 {
@@ -36,7 +36,7 @@ namespace Phonebook.Infrastructure.Repositories
             var result = await _context.SaveChangesAsync();
             return result > 0;
         }
-        public async Task<List<Contact>> GetAll() => await _context.Contacts.ToListAsync();
+        public async Task<List<Contact>> GetAll() => await _context.Contacts.AsNoTracking().ToListAsync();
         public async Task<Contact> GetById(int id) => await _context.Contacts.FindAsync(id);
 
         

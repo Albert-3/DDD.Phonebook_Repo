@@ -8,11 +8,11 @@ using Phonebook.Infrastructure.Data;
 
 #nullable disable
 
-namespace Phonebook.Api.Migrations
+namespace Phonebook.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250621180531_initial")]
-    partial class initial
+    [Migration("20250623081541_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

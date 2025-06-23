@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "createDTO",
-        "Type": "Phonebook.Infrastructure.DTOs.CreateDTO",
+        "Type": "Phonebook.Api.DTOs.CreateDTO",
         "IsRequired": true
       }
     ],
@@ -39,17 +39,7 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[Phonebook.Infrastructure.DTOs.GetAllDto, Phonebook.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Phonebook.Api.Controllers.ContactController",
@@ -67,7 +57,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Phonebook.Infrastructure.DTOs.GetByIdDto",
+        "Type": "Phonebook.Api.DTOs.GetByIdDto",
         "MediaTypes": [
           "text/plain",
           "application/json",

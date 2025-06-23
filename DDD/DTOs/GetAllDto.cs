@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Phonebook.Infrastructure.DTOs
+namespace Phonebook.Api.DTOs
 {
     public class GetAllDto
     {

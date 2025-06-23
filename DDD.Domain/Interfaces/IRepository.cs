@@ -1,4 +1,4 @@
-﻿namespace Phonebook.Infrastructure.Interfaces
+﻿namespace Phonebook.Domain.Interfaces
 {
     public interface IRepository<T>
     {
